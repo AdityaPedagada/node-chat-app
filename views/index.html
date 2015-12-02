@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <script src="libs/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="libs/semantic/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+</head>
+<body>
+
+  <div class="ui centered grid container">
+    <div class="sixteen wide center aligned column">
+      <h2 class="ui inverted header">
+        <img src="/images/nodejs-icon.png" class="ui image">
+        The NodeJS Chatroom
+      </h2>
+    </div>
+    <div class="four wide left aligned column">
+      <div class="ui segments">
+        <div class="ui segment">
+          <h2>Who's Online</h2>
+        </div>
+        <div id="user-list" class="ui segment">
+          <div id="users-container"></div>
+        </div>
+        <div class="ui segment">
+          <div class="ui fluid action input">
+            <input id="username" type="text" placeholder="Your name...">
+            <button id="join-btn" class="ui blue button">
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="twelve wide center aligned column">
+      <div class="ui segments">
+
+        <div class="ui segment">
+          <div id="chat-container">
+
+            <div class="ui list"></div>
+
+          </div>
+        </div>
+
+        <div class="ui segment">
+          <div class="ui fluid action input">
+            <input id="msg-box" type="text" placeholder="Enter a message...">
+            <button id="send-btn" class="ui right labeled icon blue disabled button">
+              Send<i class="right chevron icon"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="javascripts/init.js"></script>
+</body>
+</html>

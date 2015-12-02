@@ -1,0 +1,33 @@
+.container .sixteen.wide.column {
+  margin-top: 30px !important;
+}
+
+h2.header {
+  margin-bottom: 20px !important;
+}
+
+body {
+  background-color: #46AAD9 !important;
+}
+
+.segment {
+  background-color: #F0F7FA !important;
+}
+
+#chat-container {
+  max-height: 300px !important;
+  min-height: 300px !important;
+  overflow-y: auto;
+  text-align: left !important;
+}
+
+#users-container {
+  max-height: 242px !important;
+  min-height: 242px !important;
+  overflow-y: auto;
+}
+
+#users-container a {
+  display: block;
+  cursor: pointer;
+}
